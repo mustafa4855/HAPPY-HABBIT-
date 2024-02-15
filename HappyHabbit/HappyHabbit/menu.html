@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<style>
+     .hov:hover {
+      border-bottom-style: solid;
+      border-bottom-color: yellowgreen;
+      border-radius: 8px;
+  }
+</style>
+
+<body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-expanping-sm text-dark fixed-top" style="height: 120px;background-color: aliceblue;">
+        <ul class="navbar nav">
+            <li class="navbar-brand" style="margin-right: 100px;margin-left: 30px;">
+               <img src="./Happy+Habits+Crest+02.png" alt="navbarlogo" class="rounded-circle" style="width:110px ;height:90px ;">
+            </li>
+
+            <li class="navbar navbar-item hov">
+               <a href="./homepage.html" class="nav-link text-dark active" style="color:black;padding-left: 0%;"><b>Home</b></a>
+            </li>
+
+            <li class="navbar navbar-item dropdown hov">
+                <a href="#" data-toggle="dropdown" class="nav-link text-dark dropdown-toggle" style="color:black;padding-left: 0%;"><b>Product & Menu</b></a>
+
+                
+                <div class="dropdown-menu" style="border-top:5px yellowgreen solid">
+                   <div class="dropdown-item" style="border-bottom: rgb(37, 37, 37) solid 1px;">
+                     <a href="./menu.html#juices" class="dropdown-link text-dark">Juices</a>
+                   </div>
+
+                   <div class="dropdown-item" style="border-bottom: rgb(37, 37, 37) solid 1px;">
+                    <a href="./menu.html#shakes" class="dropdown-link text-dark"> Protein shakes</a>
+                  </div>
+
+                  <div class="dropdown-item" style="border-bottom: rgb(37, 37, 37) solid 1px;">
+                    <a href="./menu.html#vegetablejuices" class="dropdown-link text-dark">Vegetable Juices</a>
+                  </div>
+
+                  <div class="dropdown-item" style="border-bottom: rgb(37, 37, 37) solid 1px;">
+                    <a href="./menu.html#smoothies" class="dropdown-link text-dark">Smoothies</a>
+                  </div>
+
+                  <div class="dropdown-item" style="border-bottom: rgb(37, 37, 37) solid 1px;">
+                    <a href="./menu.html#wintermenu" class="dropdown-link text-dark">Winter menu</a>
+                  </div>
+
+                  <div class="dropdown-item" style="border-bottom: rgb(37, 37, 37) solid 1px;">
+                    <a href="./menu.html#chocolatejuices" class="dropdown-link text-dark">Chocolate juices</a>
+                  </div>
+
+                  <div class="dropdown-item">
+                    <a href="./menu.html#mocktails" class="dropdown-link text-dark">Mock tails</a>
+                  </div>
+                </div>
+            
+             </li>
+
+             <li class="navbar navbar-item hov">
+                <a href="./locateus.html" class="nav-link text-dark" style="padding-left: 0%;color:black"><b>Store Location</b></a>
+             </li>
+
+             <li class="navbar navbar-item hov">
+                <a href="franchise.html" class="nav-link text-dark" style="padding-left: 0%;color:black"><b>Franchising</b></a>
+             </li>
+
+             <li class="navbar navbar-item hov">
+                <a href="./catreen.html" class="nav-link text-dark" style="padding-left: 0%;color:black"><b>Catering</b></a>
+             </li>
+
+             <li class="navbar navbar-item hov">
+                <a href="#" data-toggle="modal" data-target="#modal" class="nav-link" style="padding-left: 0%;color: black;"><b>Contact</b></a>
+             </li>
+ 
+             <li class="navbar navbar-item hov">
+                <a href="#" data-toggle="modal" data-target="#modalfb" class="nav-link" style="padding-left: 0%;color: black;"><b>Feeback</b></a>
+             </li>
+
+             <li class="navbar navbar-item hov">
+                <a href="aboutus.html" class="nav-link text-dark" style="padding-left:0%;color:black"><b>About Us</b></a>
+             </li>
+            
+            </ul>
+    </nav> 
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              
+              <div class="modal-header text-center text-white" style="background-color: black;">
+                   <h1 class="modal-title">Contact</h1>
+                   <button data-dismiss="modal" class="close">&times;</button>
+                </div>
+  
+                   <div class="modal-body text-white" style="background-color:black ;">
+                     
+                   <div class="row"> <img src="R8cf26407ba7df0ec86706d7828f23d9e.jpg" width="28px" height="28px" class="rounded" style="margin-left: 15px;margin-right:10px ;">  <p class="modal-text"> Plot No. E-61, Sector 31-D, P&T Society, Korangi <br/>Industry Area, Karachi.</p></div>
+                   <div class="row"> <img src="R53b9f1f0546c39b3744996e5872d9f53.png" width="28px" height="28px" style="margin-left: 15px;margin-right:10px ;"> <p class="modal-text"> 021-111-473-366</p></div>
+                    <img src="R79b40497363f46e264f51d1176cafece.png" width="28px" height="28px" style="margin-right:10px">  <a href="www.gmail.com" class="modal-text" style="color: rgb(122, 184, 31);">  share@happyhabbit.pk</a><br/><br/>
+                    <img src="globe-earth-icon-vector-illustration.jpg" width="28px" height="28px" class="rounded" style="margin-right:10px"> <a href="./homepage.html" class="modal-text" style="color:  rgb(122, 184, 31);"> https://www.happyhabbitjuices.pk</a><br/><br/>
+                      <a href="https://twitter.com/" target="blank"> <img src="./twitter-square-logo_318-53140.png" alt="image" class="rounded-circle" width="20px" height="20px" style="margin-right: 10px;"></a>
+         <a href="https://www.instagram.com/?hl=en"  target="blank"><img src="./insta-logo.jpg" alt="image" class="rounded-circle" width="20px" height="20px" style="margin-right: 10px;"></a>
+         <a href="https://www.facebook.com"  target="blank"><img src="./facebook-symbol_318-37686.jpg" alt="image" class="rounded-circle" width="20px" height="20px" style="margin-right: 50px;"></a>
+                 
+  
+               </div>
+  
+              <div class="modal-footer" style="background-color: black;">
+                  <button data-dismiss="modal" class="btn" data-target="modal" style="background-color: rgb(122, 184, 31);color: aliceblue;">close</button>
+              </div>
+    
+            </div>
+        </div>
+    </div>
+  
+    <div class="modal fade" id="modalfb" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+     <div class="modal-dialog">
+         <div class="modal-content">
+           
+           <div class="modal-header text-center text-white" style="background-color: black;">
+                <h1 class="modal-title">Feedback Request</h1>
+                <button data-dismiss="modal" class="close">&times;</button>
+             </div>
+  
+             <div class="modal-body text-center"> 
+              <h3>Your opinion matters</h3>
+              <h5>Help us improve our product? <strong>Give us your feedback.</strong></h5>
+              <hr>
+              <h6>Your Rating</h6>
+              </div>
+  
+            <div class="modal-body text-dark text-left" style="background-color:rgb(255, 255, 255) ;">
+              <div class="form-check" style="margin-bottom: 10px;"> <input name="feedback" type="radio"> <label style="margin-left: 5px;">Very good</label> </div>
+              <div class="form-check" style="margin-bottom: 10px;"> <input name="feedback" type="radio"> <label style="margin-left: 5px;">Good</label> </div>
+              <div class="form-check" style="margin-bottom: 10px;"> <input name="feedback" type="radio"> <label style="margin-left: 5px;">Mediocre</label> </div>
+              <div class="form-check" style="margin-bottom: 10px;"> <input name="feedback" type="radio"> <label style="margin-left: 5px;">Bad</label> </div>
+              <div class="form-check" style="margin-bottom: 10px;"> <input name="feedback" type="radio"> <label style="margin-left: 5px;">Very Bad</label> </div>
+           </div>
+  
+            <div class="text-center">
+              <h4>What could we improve?</h4>
+          </div> <input type="textarea" placeholder="Your Message" style="border-style: none;height: 100px;padding-left: 10px;"></input>
+          <button type="submit" value="Submit" class="btn" style="background-color: rgb(122, 184, 31);color: aliceblue;width: 100px;margin-left:200px ;margin-top: 50px;margin-bottom: 20px;">Submit</button>
+  
+           <div class="modal-footer" style="background-color: black;">
+               <button data-dismiss="modal" class="btn" data-target="modalfb" style="background-color: rgb(122, 184, 31);color: aliceblue;">close</button>
+           </div>
+  
+         </div>
+     </div>
+  </div>
+
+
+    <div class="carousel-inner" id="juice">
+           <img src="./grape-8k-32.jpg" style="width: 100%;height: 600px;margin-top: 100px;" alt="img1"/>
+           <div class="carousel-caption text-center">
+              <h3 style="margin-bottom: 160px; font-size:60px; font-family:cursive; color:purple"><b>JUICES</b></h3>
+              
+              </div>
+        </div>
+
+
+
+        <div class="carousel-inner">
+            <img src="./4619-r1.jpg" alt="logo" style="width: 100%;height: 1200px;">
+        <div class="carousel-caption">
+
+
+        
+        <div class="container text-center text-dark">
+           <div class="row" style="margin-top: 70px;">
+            <div class="text-center" style="margin-left: 80px;margin-right: 55px;margin-bottom: 30px;">
+                <img src="./lime.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                <h4 style="font-family: cursive;color: green;"><b>LIME DROP</b></h4>
+                <p>Apple,Lemon,Mint</p>
+                <b>400Rs</b>
+            </div>
+
+                <div class="text-center" style="margin-right: 40px;">
+                    <img src="./mango-1.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                    <h4 style="font-family: cursive;color: green;"><b>MANGO MADNESS</b></h4>
+                    <p>Mango Juice, Pineapple, Orange</p>
+                    <b>500Rs</b>
+                </div>
+
+                <div class="text-center" style="margin-right:50px">
+                    <img src="./pine.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                    <h4 style="font-family: cursive;color: green;"><b>PINEAPPLE WHISPER</b></h4>
+                    <p>Pineapple, Lemon, Carrot, Apple</p>
+                    <b>300Rs</b>
+                </div>
+
+                <div class="text-center" style="margin-left: 80px;margin-right: 50px;margin-bottom:30px ;">
+                    <img src="./4.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                    <h4 style="font-family: cursive;color: green;"><b>UNBEATABLE</b></h4>
+                    <p>Pineapple, Lemon, Carrot, </br>Orange, Apple</p>
+                    <b>400Rs</b>
+                </div>
+    
+                    <div class="text-center" style="margin-right: 40px;">
+                        <img src="./5.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                        <h4 style="font-family: cursive;color: green;"><b>REFRESHING BOOST</b></h4>
+                        <p>Apple, Orange, Pineapple</p>
+                        <b>450Rs</b>
+                    </div>
+    
+                    <div class="text-center" style="margin-right:50px">
+                        <img src="./downloads.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                        <h4 style="font-family: cursive;color: green;"><b> LET IT GLOW</b></h4>
+                        <p>Pineapple, Celery, Cucumber,</br> Lemon, Apple</p>
+                        <b>350Rs</b>
+                    </div>
+
+                    <div class="text-center" style="margin-left: 80px;margin-left: 380px;margin-bottom: 30px;">
+                        <img src="./3-2.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                        <h4 style="font-family: cursive;color: green;"><b>APPLE</b></h4>
+                        <p>Apple,Sugar</p>
+                        <b>300Rs</b>
+                    </div>
+                </div>
+        </div>
+        </div>
+        </div>
+
+
+        
+            
+        
+
+        <div class="carousel-inner" id="shakes">
+
+           <img src="./198.jpg" style="width: 100%;height: 600px" alt="img1"/>
+               <div class="carousel-caption text-center">
+                   
+                  <h3 style="margin-bottom: 180px; font-size:60px; font-family:cursive; color:rgb(109, 151, 80);"><b>PROTEIN SHAKES</b></h3>
+                   
+
+
+                   </div>
+            </div>
+
+            <div class="carousel-inner">
+                <img src="./4619-r1.jpg" alt="logo" style="width: 100%;height: 860px;">
+            <div class="carousel-caption">
+
+            
+            <div class="container text-center text-dark">
+                <div class="row">
+                  <div class="text-center" style="margin-left: 80px;margin-right: 55px;">
+                  <img src="./Banana-Shakes.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                  <h4 style="font-family: cursive;color:orange;"><b>BANANA</b></h4>
+                  <p>Banana, Milk, Cream, Honey</p>
+                  <b>500Rs</b>
+              </div>
+  
+                  <div class="text-center" style="margin-right: 40px;">
+                      <img src="./Pineapple-Shakes.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                      <h4 style="font-family: cursive;color: orange;"><b>PINEAPPLE</b></h4>
+                      <p>Pineapple, Milk, Cream, Honey</p>
+                      <b>550Rs</b>
+                  </div>
+  
+                  <div class="text-center" style="margin-right:50px">
+                      <img src="./BEAST-Shakes.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                      <h4 style="font-family: cursive;color: orange;"><b>BEAST</b></h4>
+                      <p>Fresh Strawberry, Banana,<br/> Strawberry Cheese Icecream,<br/> Milk, Cream
+
+                      </p>
+                      <b>600Rs</b>
+                  </div>
+
+            
+                                
+            <div class="text-center" style="margin-left: 170px;margin-right: 70px; margin-bottom: 30px;">
+                <img src="./BERRY-CREAM-Shakes.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                <h4 style="font-family: cursive;color: orange;"><b>BERRY CREAM</b></h4>
+                <p>Fresh Blueberry, Banana, Blueberry<br/>, Ice cream, Milk, Cream</p>
+                <b>450Rs</b>
+            </div>
+
+                <div class="text-center" style="margin-right: 40px;">
+                    <img src="./CHOC-A-LAVA-Shakes.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                    <h4 style="font-family: cursive;color: orange;"><b>CHOC-A-LAVA</b></h4>
+                    <p>Fresh Strawberry, Brownie Ice cream<br/>, Milk, Cream</p>
+                    <b>630Rs</b>
+                </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+
+
+
+               <div class="carousel-inner" id="vegetablejuices">
+                     <img src="./oswgbtjib2z99crf2pgrb9z7oygdwpgcqlyg9ttpusfdjwik1ipb8k7qpyngmjle-.jpg" style="width: 100%;height: 600px;" alt="img1"/>
+                   <div class="text-center carousel-caption">
+                      <h3 style="margin-bottom: 180px; font-size:60px; font-family:cursive; color: black;"><b>VEGETABLE JUICES</b></h3>
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-inner">
+                <img src="./4619-r1.jpg" alt="logo" style="width: 100%;height: 1250px;">
+            <div class="carousel-caption">
+
+                <div class="container text-center text-dark">
+                    <div class="row" style="margin-top: 150px;">
+                      <div class="text-center" style="margin-left: 80px;margin-right: 55px; margin-bottom: 30px;">
+                      <img src="./7.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                      <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>SELF DEFENCE</b></h4>
+                      <p>Beetroot, Spinach, Lemon,<br/> Carrot, Ginger, Apple</p>
+                      <b>600Rs</b>
+                  </div>
+      
+                      <div class="text-center" style="margin-right: 50px;">
+                          <img src="./8.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                          <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>GRAPEALICIOUS</b></h4>
+                          <p>Beetroot, Red Grapes,<br/> Ginger, Lemon, Apple</p>
+                          <b>500Rs</b>
+                      </div>
+      
+                      <div class="text-center" style="margin-right:50px">
+                          <img src="./9.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                          <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>MIRACLE SIP</b></h4>
+                          <p>Carrot, Beetroot, <br/>Lemon, Spinach, Apple
+
+                          </p>
+                          <b>350Rs</b>
+                      </div>
+
+                      <div class="text-center" style="margin-left: 80px;margin-right: 55px; margin-bottom: 30px;">
+                        <img src="./10.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                        <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>IMMUNITY</b></h4>
+                        <p>Cucumber, Bay Leaf,<br/> Ginger, Celery, Apple</p>
+                        <b>300Rs</b>
+                    </div>
+        
+                        <div class="text-center" style="margin-right: 40px;">
+                            <img src="./11.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                            <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>FAT BURNER</b></h4>
+                            <p>Papaya, Ginger, Pineapple, Orange</p>
+                            <b>570Rs</b>
+                        </div>
+        
+                        <div class="text-center" style="margin-right:50px">
+                            <img src="./12.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                            <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>ABSOLUTE CURE</b></h4>
+                            <p>Guava, Celery, Cucumber, Apple</p>
+                            <b>380Rs</b>
+                        </div>
+
+                        
+                        <div class="text-center" style="margin-left: 80px;margin-right: 55px;">
+                            <img src="./13.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                            <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>HEALTHY HEART</b></h4>
+                            <p>Beetroot, Mint, Ginger, <br/>Cucumber, Apple, Orange</p>
+                            <b>450Rs</b>
+                        </div>
+            
+                            <div class="text-center" style="margin-right: 60px;">
+                                <img src="./14.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                                <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>THERAPY</b></h4>
+                                <p>Beetroot, Carrot, Celery, <br/>Ginger, Apple, Orange</p>
+                                <b>300Rs</b>
+                            </div>
+            
+                            <div class="text-center" style="margin-right:50px">
+                                <img src="./15.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                                <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>VEGGIE COCKTAIL</b></h4>
+                                <p>Beetroot, Carrot, Celery, Orange</p>
+                                <b>400Rs</b>
+                            </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+
+                            <div class="carousel-inner">
+                                <img src="./4619-r1.jpg" alt="logo" style="width: 100%;height: 860px;">
+                            <div class="carousel-caption">
+
+                                
+                <div class="container text-center text-dark">
+                    <div class="row">
+
+                            
+                            <div class="text-center" style="margin-left: 80px;margin-right: 55px; margin-bottom: 30px;">
+                                <img src="./16.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                                <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>SUMMER HEAL</b></h4>
+                                <p>Beetroot, Apple, Orange</p>
+                                <b>400Rs</b>
+                            </div>
+                
+                                <div class="text-center" style="margin-right: 40px;">
+                                    <img src="./17.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                                    <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>GREEN PULSE</b></h4>
+                                    <p>Pineapple, Spinach, Ginger,<br/> Lemon, Cucumber, Apple, Celery</p>
+                                    <b>500Rs</b>
+                                </div>
+                
+                                <div class="text-center" style="margin-right:50px">
+                                    <img src="./18.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                                    <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>VEGGIE ZEST</b></h4>
+                                    <p>Cualiflower, Spinach, Salary, Lemon,<br/> Carrot, Cucumber, Apple</p>
+                                    <b>300Rs</b>
+                                </div>
+
+                                
+                                <div class="text-center" style="margin-left: 170px;margin-right: 70px; margin-bottom: 30px;">
+                                    <img src="./19.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                                    <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>FROSTY SWEET GREEN</b></h4>
+                                    <p>Zucchini, Spinach, Celery,<br/> Lemon, Carrot, Cucumber, Apple</p>
+                                    <b>400Rs</b>
+                                </div>
+                    
+                                    <div class="text-center" style="margin-right: 40px; margin-bottom: 120px;">
+                                        <img src="./20.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                                        <h4 style="font-family: cursive;color: rgb(173, 173, 0);"><b>MAGIC DETOX</b></h4>
+                                        <p>Celery, Spinach, Cucumber, Apple</p>
+                                        <b>500Rs</b>
+                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="carousel-inner" id="smoothies">
+            <img src="./thumb-1920-999593.jpg" style="width: 100%;height: 600px;" alt="img1"/>
+          <div class="text-center carousel-caption">
+             <h3 style="margin-bottom: 180px; font-size:60px; font-family:cursive; color:aliceblue;"><b>SMOOTHIES</b></h3>
+           </div>
+       </div>
+
+
+
+       <div class="carousel-inner">
+       <img src="./4619-r1.jpg" alt="logo" style="width: 100%;height: 1250px;">
+   <div class="carousel-caption">
+
+       <div class="container text-center text-dark">
+           <div class="row" style="margin-top: 150px;">
+             <div class="text-center" style="margin-left: 40px;margin-right: 15px; margin-bottom: 30px;">
+             <img src="./1.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+             <h4 style="font-family: cursive;color:rgb(114, 3, 114);"><b>BERRY HONEY-LICIOUS</b></h4>
+             <p>Orange, Banana, Strawberry,<br/> Honey, Yogurt</p>
+             <b>400Rs</b>
+         </div>
+
+             <div class="text-center" style="margin-right: 40px;">
+                 <img src="./2.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                 <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>CRAZY ISLAND</b></h4>
+                 <p>Pineapple,Banana, Orange,<br/> Honey, Yogurt</p>
+                 <b>350Rs</b>
+             </div>
+
+             <div class="text-center" style="margin-right:50px">
+                 <img src="./3.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                 <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>ROYAL MINT</b></h4>
+                 <p>Orange, Pineapple, Guava,<br/> Mint, Honey, Yogurt</p>
+                 <b>600Rs</b>
+             </div>
+
+             <div class="text-center" style="margin-left: 50px;margin-right: 15px; margin-bottom: 30px;">
+               <img src="./4-1.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+               <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>SIGNATURE COCKTAIL</b></h4>
+               <p>Pineapple, Banana, Strawberry, <br/>Guava, Orange, Honey, Yogurt</p>
+               <b>400Rs</b>
+           </div>
+
+               <div class="text-center" style="margin-right: 40px;">
+                   <img src="./5-1.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                   <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>SWEET HONEY</b></h4>
+                   <p>Orange, Guava, Banana,<br/> Strawberry, Honey, Yogurt </p>
+                   <b>450Rs</b>
+               </div>
+
+               <div class="text-center" style="margin-right:50px">
+                   <img src="./6-1.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                   <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>SPRING SUNSET</b></h4>
+                   <p>Strawberry, Banana, Guava,<br/> Pineapple, Honey</p>
+                   <b>360Rs</b>
+               </div>
+
+               
+               <div class="text-center" style="margin-left: 70px;margin-right: 55px;">
+                   <img src="./7-1.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                   <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>MINTY FUSION</b></h4>
+                   <p>Banana, Pineapple, Mint</p>
+                   <b>410Rs</b>
+               </div>
+   
+                   <div class="text-center" style="margin-right: 40px;">
+                       <img src="./8-1.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                       <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>VERY BERRY TREAT</b></h4>
+                       <p>Blackberry, Strawberry, Pineapple,<br/> Guava, Honey, Banana</p>
+                       <b>520Rs</b>
+                   </div>
+   
+                   <div class="text-center" style="margin-right:50px">
+                       <img src="./9-1.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                       <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>BERRY-LICIOUS</b></h4>
+                       <p>Strawberry, Blackberry, Pineapple,<br/> Guava, Honey</p>
+                       <b>480Rs</b>
+                   </div>
+           </div>
+       </div>
+   </div>
+       </div>
+
+                   <div class="carousel-inner">
+                       <img src="./4619-r1.jpg" alt="logo" style="width: 100%;height: 1580px;">
+                   <div class="carousel-caption">
+
+                       
+       <div class="container text-center text-dark">
+           <div class="row">
+
+                   
+                   <div class="text-center" style="margin-left: 80px;margin-right: 45px; margin-bottom: 30px;">
+                       <img src="./Berry-Blast.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                       <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>BERRY BLAST</b></h4>
+                       <p>Banana, Blueberry, Pineapple, <br/>Papaya, Honey</p>
+                       <b>400Rs</b>
+                   </div>
+       
+                       <div class="text-center" style="margin-right: 50px;">
+                           <img src="./Green-Protien.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                           <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>GREEN PROTIEN</b></h4>
+                           <p>Apple, Banana, Celery, <br/>Papaya, Honey</p>
+                           <b>500Rs</b>
+                       </div>
+       
+                       <div class="text-center" style="margin-right:50px">
+                           <img src="./Good-Vibration.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                           <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>GOOD VIBRATION</b></h4>
+                           <p>Guava, Mint, Banana, <br/>Lemon, Mango Juice</p>
+                           <b>390Rs</b>
+                       </div>
+
+                       <div class="text-center" style="margin-left: 60px;margin-right: 15px; margin-bottom: 30px;">
+                       <img src="./BREAKFAST-SMOOTHIE.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                       <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>BREAKFAST SMOOTHIE</b></h4>
+                       <p>Coconut Water, Pineapple,<br/> Banana, Spinach</p>
+                       <b>420Rs</b>
+                   </div>
+       
+                       <div class="text-center" style="margin-right: 40px;">
+                           <img src="./FRUIT-BLAST.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                           <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>FRUIT BLAST</b></h4>
+                           <p>Pineapple, Ginger, Mint, <br/>Mango Juice</p>
+                           <b>500Rs</b>
+                       </div>
+       
+                       <div class="text-center" style="margin-right:50px">
+                           <img src="./BEACH-COCKTAIL.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                           <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>BEACH COCKTAIL</b></h4>
+                           <p>Coconut Water, Pineapple,<br/> Banana, Guava, Celery</p>
+                           <b>300Rs</b>
+                       </div>
+
+                      <div class="text-center" style="margin-left: 85px;margin-right: 55px; margin-bottom: 30px;">
+                       <img src="./MIGHTY-BANANA.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                       <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>MIGHTY BANANA</b></h4>
+                       <p>Banana, Strawberry, <br/>Honey, Milk, Cream</p>
+                       <b>400Rs</b>
+                   </div>
+       
+                       <div class="text-center" style="margin-right: 50px;">
+                           <img src="./CREAMY-BLAST.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                           <h4 style="font-family: cursive;color: rgb(99, 92, 99);"><b>CREAMY BLAST</b></h4>
+                           <p>Strawberry, Banana, Pineapple,<br/> Honey, Milk, Cream</p>
+                           <b>600Rs</b>
+                       </div>
+       
+                       <div class="text-center" style="margin-right:50px">
+                           <img src="./PEANUT-BUTTER.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                           <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>PEANUT BUTTER <br/>DELIGHT</b></h4>
+                           <p>Banana, Peanut Butter, Milk,<br/> Cream, Ice Cream</p>
+                           <b>700Rs</b>
+                       </div>
+
+                       
+                       <div class="text-center" style="margin-left: 170px;margin-right: 70px; margin-bottom: 30px;">
+                           <img src="./VELVET-SENSATION.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                           <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>VELVET SENSATION</b></h4>
+                           <p>Strawberry, Banana, Nutella,<br/> Milk, Cream</p>
+                           <b>310Rs</b>
+                       </div>
+           
+                           <div class="text-center" style="margin-right: 40px;">
+                               <img src="./SEVEN-DAYS.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                               <h4 style="font-family: cursive;color: rgb(114, 3, 114);"><b>SEVEN DAYS</b></h4>
+                               <p>Banana, Dates, Peanut<br/> Butter, Milk Cream</p>
+                               <b>400Rs</b>
+                           </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+              
+<div class="carousel-inner" id="wintermenu">
+    <img src="./25254E3752F359D102.jpg" style="width: 100%;height: 600px;" alt="img1"/>
+  <div class="text-center carousel-caption">
+     <h3 style="margin-bottom: 180px; font-size:60px; font-family:cursive; color:aliceblue;"><b>WINTER MENU</b></h3>
+   </div>
+</div>
+
+<div class="carousel-inner">
+    <img src="./4619-r1.jpg" alt="logo" style="width: 100%;height: 850px;">
+<div class="carousel-caption">
+
+    <div class="container text-center text-dark">
+        <div class="row" style="margin-top: 150px;">
+          <div class="text-center" style="margin-left: 80px;margin-right: 55px; margin-bottom: 30px;">
+          <img src="./1-3.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+          <h4 style="font-family: cursive;color:rgb(175, 87, 55);"><b>ESPRESSO SHOT</b></h4>
+          <b>800Rs</b>
+      </div>
+
+          <div class="text-center" style="margin-right: 40px;">
+              <img src="./2-3.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+              <h4 style="font-family: cursive;color: rgb(175, 87, 55);"><b>AMERICANO</b></h4>
+              <b>900Rs</b>
+          </div>
+
+          <div class="text-center" style="margin-right:50px">
+              <img src="./3-3.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+              <h4 style="font-family: cursive;color: rgb(175, 87, 55);"><b>LATTE</b></h4>
+              <b>750Rs</b>
+          </div>
+
+          <div class="text-center" style="margin-left: 80px;margin-right: 55px; margin-bottom: 30px;">
+            <img src="./4-3.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+            <h4 style="font-family: cursive;color: rgb(175, 87, 55);"><b>CAPPUCCINO</b></h4>
+            <b>1000Rs</b>
+        </div>
+
+            <div class="text-center" style="margin-right: 40px;">
+                <img src="./5-3.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                <h4 style="font-family: cursive;color: rgb(175, 87, 55);"><b>IRISH LATTE</b></h4>
+              <b>750Rs</b>
+            </div>
+
+            <div class="text-center" style="margin-right:50px ;margin-bottom: 100px;">
+                <img src="./6-3.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+                <h4 style="font-family: cursive;color: rgb(175, 87, 55);"><b>HOT CHOCOLATE</b></h4>
+                <b>700Rs</b>
+            </div>
+            </div>
+            </div>
+</div>
+</div>
+
+<div class="carousel-inner" id="chocolatejuices">
+    <img src="./Rb8390e54df17b00d2a0b2a2d2d21eb91.jpg" style="width: 100%;height: 600px;" alt="img1"/>
+  <div class="text-center carousel-caption">
+     <h3 style="margin-bottom: 180px; font-size:60px; font-family:cursive; color:red;"><b>CHOCOLATE JUICES</b></h3>
+   </div>
+</div>
+
+
+
+<div class="carousel-inner">
+<img src="./4619-r1.jpg" alt="logo" style="width: 100%;height: 800px;">
+<div class="carousel-caption">
+
+    <div class="container text-center text-dark">
+        <div class="row">
+          <div class="text-center col-sm-3" style="margin-left: 40px;margin-right: 55px;">
+          <img src="./5bdad88d1f00006d03259dfa.jpeg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+          <h4 style="font-family: cursive;color:brown"><b>CHOCO CRUNCHY</b></h4>
+        
+          <b>600Rs</b>
+      </div>
+
+          <div class="text-center" style="margin-right: 40px;">
+              <img src="./Rb72a81607402d47db4db0632f1357f21.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+              <h4 style="font-family: cursive;color: brown;"><b>CREAMY CHOCOLATE</b></h4>
+              <b>650Rs</b>
+          </div>
+
+          <div class="text-center" style="margin-right:50px">
+              <img src="./Hot-Chocolate.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+              <h4 style="font-family: cursive;color: brown;"><b>CHOSTA</b></h4>
+              <b>850Rs</b>
+          </div>
+
+    
+                        
+    <div class="text-center" style="margin-left: 350px;margin-right: 70px; margin-bottom: 80px;">
+        <img src="./900_851377CcBX_hot-chocolate-cup.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+        <h4 style="font-family: cursive;color: brown;"><b>CHOCO CUP</b></h4>
+        <b>500Rs</b>
+    </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+<div class="carousel-inner" id="mocktails">
+    <img src="./290868.jpg" style="width: 100%;height: 600px;" alt="img1"/>
+  <div class="text-center carousel-caption">
+     <h3 style="margin-bottom: 180px; font-size:60px; font-family:cursive; color: black;"><b>MOCKTAILS</b></h3>
+   </div>
+</div>
+
+
+<div class="carousel-inner">
+    <img src="./4619-r1.jpg" alt="logo" style="width: 100%;height: 800px;">
+    <div class="carousel-caption">
+
+
+<div class="container text-center text-dark">
+    <div class="row">
+      <div class="text-center" style="margin-left: 80px;margin-right: 55px;">
+      <img src="./Gracie's - orange you curious.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+      <h4 style="font-family: cursive;color:rgb(0, 0, 71);"><b>GRACIE</b></h4>
+    
+      <b>250Rs</b>
+  </div>
+
+      <div class="text-center" style="margin-right: 40px;">
+          <img src="./new-years-mocktails_chocolate-mock-tini.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+          <h4 style="font-family: cursive;color:rgb(0, 0, 71)"><b>CHOCO MOCK TINI</b></h4>
+          <b>300Rs</b>
+      </div>
+
+      <div class="text-center" style="margin-right:50px">
+          <img src="./new-years-mocktails_cran-apple-cider.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+          <h4 style="font-family: cursive;color:rgb(0, 0, 71)"><b>CRAN APPLE CIDERr</b></h4>
+          <b>350Rs</b>
+      </div>
+
+
+                    
+<div class="text-center" style="margin-left: 170px;margin-right: 90px; margin-bottom: 80px;">
+    <img src="./Gracie's - orange you curious.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+    <h4 style="font-family: cursive;color:rgb(0, 0, 71)"><b>ORANGE YOU CURIOUS</b></h4>
+    <b>410Rs</b>
+</div>
+
+<div class="text-center" style="margin-right: 70px; margin-bottom: 80px;">
+    <img src="./new-years-mocktails_shirley-temple.jpg" alt="lime" class="rounded-circle" style="width: 230px;height:230px;">
+    <h4 style="font-family: cursive;color:rgb(0, 0, 71)"><b>SHRILEY TEMPLE</b></h4>
+    <b>310Rs</b>
+</div>
+
+    </div>
+
+</div>
+</div>
+</div>
+
+
+<div class="carousel-inner">
+    <img src="./ui.jpg" width="100%" height="300px"/>
+    <div class="carousel-caption">
+
+    <div class=" text-center " style=" height: 300px;padding-top: 120px;">
+        <footer>
+           <div class="row text-center" style="margin-left:320px;">
+               <a href="./homepage.html" style="border-right: 2px white solid;padding-right: 60px;padding-left: 30px;" class="col-sm-1 text-white">Home</a>
+               <a href="./aboutus.html"  style="border-right: 2px white solid;padding-right: 60px;padding-left: 20px;"class="col-sm-1 text-white">About</a>
+               <a href=".locateus.html" class="col-sm-1 text-white">Location</a>
+       </div>
+       <div style="padding: 10px; margin-left:20px;margin-top: 15px;">
+                     <a href="https://twitter.com/" target="blank"> <img src="./twitter-square-logo_318-53140.png" alt="image" class="rounded-circle" width="40px" height="40px" style="margin-right: 10px;"></a>
+                     <a href="https://www.instagram.com/?hl=en"  target="blank"><img src="./insta-logo.jpg" alt="image" class="rounded-circle" width="40px" height="40px" style="margin-right: 10px;"></a>
+                     <a href="https://www.facebook.com"  target="blank"><img src="./facebook-symbol_318-37686.jpg" alt="image" class="rounded-circle" width="40px" height="40px" style="margin-right: 50px;"></a>
+           </div>
+       <p style="color:white;margin-top: 15px;">&copy; Copyright 2018 – HAPPY HABBIT. All Rights Reserved</br>
+       Designed And Developed By ECHO DIGITAL</p>
+           </footer>
+       </div>
+    </div>
+</div>
+
+      
+    
+</body>
+</html>
